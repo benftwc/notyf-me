@@ -4,7 +4,7 @@
 *******************************************************************************
 */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -279,6 +279,9 @@ h5 {
   text-align: center;
   padding: 0 10%;
 }
+#team .col-container {
+  margin: 0 auto;
+}
 #team .member-wrap img {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -287,7 +290,7 @@ h5 {
   width: 60%;
   margin-bottom: 20px;
   padding: 6%;
-  border: 1px solid white;
+  border: 1px dashed white;
 }
 #team .member-wrap hgroup {
   margin-bottom: 10px;
