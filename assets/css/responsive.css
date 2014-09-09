@@ -1,0 +1,157 @@
+@media (max-width: 320px) {
+  #home {
+    margin-top: 0;
+    padding: 2%;
+  }
+  #home .ccounter h1 {
+    font-size: 200%;
+  }
+  #home .ccounter li p {
+    margin-bottom: 90px;
+    margin-top: 10px;
+  }
+  #about header h1,
+  #team header h1,
+  #subscribe header h1 {
+    font-size: 300%;
+  }
+  .col-left,
+  .col-right,
+  .col-one-third {
+    float: none;
+    width: 100%;
+    padding: 2%;
+  }
+  .col-one-third .member-wrap {
+    margin-bottom: 100px;
+  }
+  #about h1 {
+    font-size: 200%;
+    line-height: 150%;
+    margin-right: 0;
+    text-align: center;
+  }
+  #about p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  #subscribe {
+    padding: 2%;
+  }
+  #subscribe form input {
+    width: 80%;
+  }
+  #subscribe form input[type='submit'] {
+    width: 50%;
+  }
+  footer .col-left,
+  footer .col-right {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: none;
+  }
+  footer .col-left span,
+  footer .col-right span,
+  footer .col-left p,
+  footer .col-right p {
+    font-size: 12px;
+  }
+  footer .col-right {
+    float: none;
+  }
+  footer .col-right p {
+    float: none;
+  }
+}
+@media (max-width: 480px) {
+  .col-left,
+  .col-right,
+  .col-one-third {
+    float: none;
+    width: 100%;
+    padding: 2%;
+  }
+  .col-left .member-wrap,
+  .col-right .member-wrap,
+  .col-one-third .member-wrap {
+    margin-bottom: 100px;
+  }
+  #home {
+    margin-top: 100px;
+    padding: 2%;
+  }
+  #home .ccounter h1 {
+    font-size: 250%;
+  }
+  #home .ccounter li {
+    width: 150px;
+  }
+  #home .ccounter p {
+    margin-bottom: 70px;
+    margin-top: 10px;
+  }
+  #about .col-left h1 {
+    font-size: 250%;
+    line-height: 150%;
+    margin-right: 0;
+    text-align: center;
+  }
+  #about p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  #subscribe {
+    padding: 2%;
+  }
+  #subscribe form input {
+    width: 80%;
+  }
+  #subscribe form input[type='submit'] {
+    width: 50%;
+  }
+  footer .col-left,
+  footer .col-right {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+  }
+  footer .col-left span,
+  footer .col-right span,
+  footer .col-left p,
+  footer .col-right p {
+    font-size: 12px;
+  }
+  footer .col-left #social li a {
+    padding: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    margin-top: 100px;
+    padding: 2%;
+  }
+  #team .col-one-third .member-wrap {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  #home {
+    margin-top: 100px;
+    padding: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  #home {
+    margin-top: 250px;
+    padding: 2%;
+  }
+}
+body {
+  transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+}

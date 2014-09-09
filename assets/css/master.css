@@ -1,0 +1,387 @@
+/*
+*******************************************************************************
+=							 Resets
+*******************************************************************************
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+*******************************************************************************
+=							 Base
+*******************************************************************************
+*/
+
+body {
+  background: white;
+  font: 16px/21px "Lato", Arial, Helvetica, sans-serif;
+  color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.col-left,
+.col-right {
+  width: 50%;
+  float: left;
+}
+.col-one-third {
+  width: 33.33%;
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  text-align: center;
+  margin: 50px 0;
+}
+.owl-theme .owl-controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.owl-theme .owl-controls .owl-page {
+  display: block;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: white;
+}
+.vegas-background {
+  width: 100%;
+}
+/*
+*******************************************************************************
+=							 Typography
+*******************************************************************************
+*/
+
+p {
+  font: 16px/25px 'Lato' Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+h1,
+h2,
+h4,
+h5 {
+  font-weight: 400;
+}
+h1 {
+  font: 60px/70px "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 18fpx;
+}
+/*
+*******************************************************************************
+=							  Home
+*******************************************************************************
+*/
+
+#home {
+  width: 100%;
+  text-align: center;
+  margin-top: 310px;
+}
+#home h1 {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 400%;
+  text-transform: uppercase;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-right: 20px;
+}
+#home #coutners {
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+}
+#home #coutners li {
+  display: inline-block;
+  text-align: center;
+}
+#home #coutners li input {
+  font: 45px 'Wire One', sans-serif !important;
+}
+#home #coutners li canvas {
+  height: 200px;
+  margin-bottom: -50px;
+}
+#home #coutners li p {
+  font-size: 50px;
+  font-family: "Wire One", cursive;
+  text-align: center;
+}
+/*
+*******************************************************************************
+=							  About
+*******************************************************************************
+*/
+
+#about h1 {
+  margin-right: 30px;
+}
+#about p {
+  margin-left: 30px;
+}
+/*
+*******************************************************************************
+=							  Team
+*******************************************************************************
+*/
+
+#team .member-wrap {
+  margin-right: 10%;
+  text-align: center;
+  padding: 0 10%;
+}
+#team .member-wrap img {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 6%;
+  border: 1px solid white;
+}
+#team .member-wrap hgroup {
+  margin-bottom: 10px;
+}
+#team .member-wrap p {
+  margin-bottom: 10px;
+}
+#team .member-wrap ul li {
+  display: inline-block;
+  margin: auto;
+}
+#team .member-wrap ul li a {
+  display: inline-block;
+  margin-right: 10px;
+}
+/*
+*******************************************************************************
+=							  Subscribe
+*******************************************************************************
+*/
+
+#subscribe {
+  text-align: center;
+}
+#subscribe form {
+  margin-top: 100px;
+}
+#subscribe form input {
+  border: 0;
+  padding: 15px 20px;
+  background: none;
+  border: 1px solid white;
+  width: 400px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+#subscribe form input[type='submit'] {
+  width: 200px;
+}
+/*
+*******************************************************************************
+=							 Footer
+*******************************************************************************
+*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+footer .col-left {
+  overflow: hidden;
+}
+footer .col-left span {
+  display: block;
+  float: left;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: 400;
+}
+footer .col-left #social {
+  overflow: hidden;
+  float: left;
+}
+footer .col-left #social li {
+  float: left;
+}
+footer .col-left #social li a {
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+footer .col-left #social li a:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+}
+footer .col-right p {
+  margin-bottom: 0;
+  float: right;
+  line-height: 30px;
+}
+footer .col-right p a {
+  text-decoration: underline;
+}
