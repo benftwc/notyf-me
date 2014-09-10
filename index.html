@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="assets/css/TimeCircles.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/jquery.modal.css">
 	<link rel="stylesheet" href="assets/css/master.css">
 
 	<!--favicon-->
@@ -183,10 +184,19 @@
 				<h4>We are eagerly Waiting to inform you</h4>
 			</header>
 
-			<form action="#">
-				<input type="text" placeholder="E-mail" disabled><br>
-				<input type="submit" value='Subscribe' disabled>
+			<form action="./add.php" id="subscribe-form">
+				<input type="email" name="email" id="swagmail" placeholder="E-mail"><br>
+				<input type="submit" class="submit" value='Subscribe'>
 			</form>
+
+			<div id="form-modal-success" class="modal">
+				<span>Thanks you for subscribing !</span>
+			</div>
+
+			<div id="form-modal-error" class="modal">
+				<span>Error while processing !</span>
+			</div>
+
 		</div><!--/container-->
 
 	</section><!--/page-->
@@ -219,6 +229,12 @@
 
 </footer> <!--/footer-->
 
+
+<div class="modal" id="ex1" style="position: fixed; top: 50%; left: 50%; margin-top: -61px; margin-left: -230px; z-index: 2; display: none;">
+  <p>Thanks for subscribing !  <br>Click <a href="#" rel="modal:close">here</a> to close</p>
+</div>
+
+
 <!--########### JS ###########-->
 
 <!--jQuery-->
@@ -235,6 +251,8 @@
 <script src="assets/js/jquery.ccountdown.js"></script>
 <script src="assets/js/init.js"></script>
 
+<!--Modal-->
+<script type="text/javascript" src="assets/js/jquery.simplemodal.1.4.4.min.js"></script>
 <!--Custom Scripts-->
 <script type="text/javascript">
 /*
@@ -245,6 +263,28 @@
 (function(){
 	$(".ccounter").ccountdown(2014,11,1,'18:00');
 })();
+
+/*
+*******************************************************************************
+=							 Ajax Form
+*******************************************************************************
+*/
+
+
+
+$('#subscribe-form').submit(function(e){
+    $.ajax({
+      type: "POST",
+      url: this.action,
+      data: {
+        mail: $('#swagmail').val(),
+        timestamp: "la date", },
+      success: function(data){
+      	$.modal("<div><h2>Thanks you for subscribing ! </h2></div>");
+      },
+     });
+     e.preventDefault();
+});
 
 </script>
 
